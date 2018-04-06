@@ -377,44 +377,6 @@
 		<button name="submit" form="WMGuess" type="submit">Submit</button>
 	</form>
 </div>
-<script>
-	const reignsElement = document.getElementById("uniPropF51");
-    reignsElement.addEventListener("click",reignsKickOut);
-	function reignsKickOut()
-    {
-    	alert("You know it's going to be more than that.");
-    }
-
-    const dbShaneElement = document.getElementById("DBShaneWin");
-    dbShaneElement.addEventListener("click", yesChant);
-    function yesChant()
-    {
-    	alert("YES! YES! YES!");
-    }
-
-    const koZaynElement = document.getElementById("KOZaynWin");
-    koZaynElement.addEventListener("click", noChant);
-    function noChant()
-    {
-    	alert("NO! NO! NO!");
-    }
-
-    const formToJSON = elements => [].reduce.call(elements, (data, element) => {
-  
-  data[element.name] = element.value;
-  return data;
-
-}, {});
-    const handleFormSubmit = event =>
-    {
-    	event.preventDefault;
-    	const data = {};
-    	const dataContainer = document.getElementsByClassName("results__display")[0];
-    	dataContainer = JSON.stringify(data, null, " " );
-    }
-    const form = document.getElementById("WMGuess");
-    form.addEventListener("submit", handleFormSubmit);
-
-</script>
+<script src="script.js"></script>
 </body>
 </html>
