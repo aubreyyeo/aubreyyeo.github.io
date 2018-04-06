@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+		@import
+		url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+		body
+		{
+			font-family: "Roboto", Helvitica, Arial, sans-serif;
+			font-size:1em;
+            background-image:url("file:///C:/Users/Aubrey/Desktop/Guesslemania/WM34Logo.png");
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center, center;
+		}
+
+		.container
+		{
+            display: block;
+			max-width: 550px;
+			width: 100%;
+            padding:28px;
+			margin-left: auto;
+            margin-right: auto;
+			position: relative;
+			align-items: center;
+            background-color:rgba(242,239,238,0.93);
+            border-radius: 25px;
+		}
+		fieldset
+		{
+			padding-bottom: 15px;
+		}
+		label
+		{
+			-webkit-touch-callout:none;
+			-webkit-user-select:none;
+			-khtml-user-select:none;
+			-moz-user-select:none;
+			-ms-user-select:none;
+			user-select:none;
+		}
+		fieldset
+		{
+			border-radius:15px;
+			border-style:solid;
+			border-width: 1.5px;
+			border-color:rgb(209,172,80);
+		}
+		legend
+		{
+			text-align: center;
+		}
+		.textLabel
+		{
+			float: left;
+			width:30.2%;
+			display:inline-block;
+			text-align:right;
+		}
+		.textLabel3
+		{
+			float: left;
+			width:36.35%;
+			display:inline-block;
+			text-align:right;
+		}
+		.textLabelBraun
+		{
+			float: left;
+			width:33.7%;
+			display:inline-block;
+			text-align:right;
+		}
+		button
+		{
+			width: 60%;
+			border-radius:8px;
+			font-size: 1.2em;
+			font-weight:100;
+			color: gold;
+			height:50px;
+			background-color:rgb(119,68,158);
+			position: center;
+			margin-left:20%;
+			margin-right:20%;
+		}
+		.headline
+		{
+			font-size: 3em;
+			text-align:center;
+			font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+			font-weight:800;
+			color: rgb(108,60,145);
+		}
+		h1
+		{
+			font-size: 2em;
+			text-align:center;
+			font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+			margin-bottom:0.09em;
+			font-weight: 900;
+			color:rgb(108,60,145);
+		}
+	</style>
+<meta charset="utf-8">
+<title>Guesslemania 34</title>
+</head>
+
+<body>
+	<div class ="container">
+	<div class ="headline">Welcome to Guesslemania!</div>
+	<form id = WMGuess>
+		<fieldset name = "username">
+			<legend><h3>Name</h3></legend>
+			<label for="usernameInput"><b>What's your name?:&nbsp;</b></label> <input type ="text" placeholder ="Vincent K. McMahon" name="usernameInput"><br>
+		</fieldset>
+		<h1 align = "center">Preshow</h1>
+		<fieldset name = "andreaBR">
+			<legend><h3>Andre Memorial Battle Royal</h3></legend>
+			<label class = "textLabel"for="andreBRWinner"><b>Winner:&nbsp;</b></label> <input type ="text" name="andreBRWinner"><br>
+			<label class = "textLabel"><b>Surprise NXT Entrant:&nbsp;</b></label> <input type ="text" name="andreBRProp"><br>
+		</fieldset>
+		<br>
+		<fieldset name = "wmnBR">
+			<legend><h3>WM wmn Battle Royal</h3></legend>
+			<label class ="textLabel"><b>Winner:&nbsp;</b></label> <input type ="text" name="wmnBRWinner"><br>
+			<label class ="textLabel"><b>Surprise NXT Entrant:&nbsp;</b></label> <input type ="text" name="wmnBRProp"><br>
+		</fieldset>
+		<br>
+		<fieldset name = "cwMatch">
+			<legend><h3>Cruiserweight Championship match</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="cwWinnerAlexander" name ="cwWinner" value="Cedric Alexander"><label for="cwWinnerAlexander">Cedric Alexander</label>
+			<br>
+			<input type ="radio" id="cwWinnerAli" name = "cwWinner" value="Mustafa Ali"><label for="cwWinnerAli">Mustafa Ali</label>
+			<br>
+			<br>
+			<b>Will either turn heel?:</b> 
+			<br>
+			<input type ="radio" id="cwPropYes" name="cwProp" value="Yes"><label for="cwPropYes">Yes</label>
+			<br>
+			<input type ="radio" id="cwPropNo" name="cwProp" value="No"><label for="cwPropNo">No</label>
+		</fieldset>
+		<h1 align = "center">Main Card</h1>
+		<fieldset name = "uniMatch">
+			<legend><h3>Universal Championship match</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="uniWinnerLesnar" name ="uniWinner" value="Brock Lesnar"><label for="uniWinnerLesnar">Brock Lesnar</label>
+			<br>
+			<input type ="radio" id="uniWinnerReigns" name = "uniWinner" value="Roman Reigns"><label for="uniWinnerReigns">Roman Reigns</label>
+			<br>
+			<br>
+			<b>How many F5s will Roman kick out of?:</b>
+			<br>
+			<input type ="radio" id="uniPropF51" name="uniProp1" value="1"><label for="uniPropF51">1</label>
+			<br>
+			<input type ="radio" id="uniPropF52" name="uniProp1" value="2"><label for="uniPropF52">2</label>
+			<br>
+			<input type ="radio" id="uniPropF53" name="uniProp1" value="3+"><label for="uniPropF53">3+</label>
+			<br>
+			<br>
+			<b>How many Spears will Brock kick out of?:</b>
+			<br>
+			<input type ="radio" id="uniPropSpear1" name="uniProp2" value="0"><label for="uniPropSpear1">0</label>
+			<br>
+			<input type ="radio" id="uniPropSpear2" name="uniProp2" value="1"><label for="uniPropSpear2">1</label>
+			<br>
+			<input type ="radio" id="uniPropSpear3" name="uniProp2" value="2+"><label for="uniPropSpear3">2+</label>
+			<br>
+		</fieldset>
+		<fieldset name = "wweTitle">
+			<legend><h3>WWE Championship match</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="wweTitleStyles" name ="wweTitleWinner" value="AJ Styles"><label for="wweTitleStyles">AJ Styles</label>
+			<br>
+			<input type ="radio" id="wweTitleNak" name = "wweTitleWinner" value="Shinsuke Nakamura"><label for="wweTitleNak">Shinsuke Nakamura</label>
+			<br>
+			<br>
+			<b>Which chant happens first?:</b> 
+			<br>
+			<input type ="radio" id="wweTitleProp1" name="wweTitleProp" value="This is Awesome"><label for="wweTitleProp1">This is Awesome</label>
+			<br>
+			<input type ="radio" id="wweTitleProp2" name="wweTitleProp" value="Fight Forever"><label for="wweTitleProp2">Fight Forever</label>
+			<br>
+			<input type ="radio" id="wweTitleProp3" name="wweTitleProp" value="Yes"><label for="wweTitleProp3">Yes</label>
+			<br>
+			<input type ="radio" id="wweTitleProp4" name="wweTitleProp" value="Holy Shit"><label for="wweTitleProp4">Holy Shit</label>
+			<br>
+		</fieldset>
+		<fieldset name = "icTitle">
+			<legend><h3>Intercontinental Championship match</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="icTitleBalor" name ="icTitleWinner" value="Finn Balor"><label for="icTitleBalor">Finn Balor</label>
+			<br>
+			<input type ="radio" id="icTitleRollins" name = "icTitleWinner" value="Seth Rollins"><label for="icTitleRollins">Seth Rollins</label>
+			<br>
+			<input type ="radio" id="icTitleMiz" name = "icTitleWinner" value="The Miz"><label for="icTitleMiz">The Miz</label>
+			<br>
+			<br>
+			<b>Who will do more sling blades?:</b> 
+			<br>
+			<input type ="radio" id="icTitleProp1" name="icTitleProp" value="Finn Balor"><label for="icTitleProp1">Finn Balor</label>
+			<br>
+			<input type ="radio" id="icTitleProp2" name="icTitleProp" value="Seth Rollins"><label for="icTitleProp2">Seth Rollins</label>
+			<br>
+			<input type ="radio" id="icTitleProp3" name="icTitleProp" value="Tie"><label for="icTitleProp3">Tie</label>
+			<br>
+		</fieldset>
+		<fieldset name = "usTitle">
+			<legend><h3>US Championship match</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="usTitleRoode" name ="usTitleWinner" value="Bobby Roode"><label for="usTitleRoode">Bobby Roode</label>
+			<br>
+			<input type ="radio" id="usTitleJinder" name = "usTitleWinner" value="Jinder Mahal"><label for="usTitleJinder">Jinder Mahal</label>
+			<br>
+			<input type ="radio" id="usTitleOrton" name = "usTitleWinner" value="Randy Orton"><label for="usTitleOrton">Randy Orton</label>
+			<br>
+			<input type ="radio" id="usTitleRusev" name = "usTitleWinner" value="Randy Orton"><label for="usTitleRusev">Rusev</label>
+			<br>
+			<br>
+			<b>How many RKOs in the match?:</b>
+			<br>
+			<input type ="radio" id="usTitleProp1" name="usTitleProp" value="0"><label for="usTitleProp1">0</label>
+			<br>
+			<input type ="radio" id="usTitleProp2" name="usTitleProp" value="1"><label for="usTitleProp2">1</label>
+			<br>
+			<input type ="radio" id="usTitleProp3" name="usTitleProp" value="2"><label for="usTitleProp3">2</label>
+			<br>
+			<input type ="radio" id="usTitleProp4" name="usTitleProp" value="3"><label for="usTitleProp4">3</label>
+			<br>
+			<input type ="radio" id="usTitleProp5" name="usTitleProp" value="4+"><label for="usTitleProp5">4+</label>
+			<br>
+		</fieldset>
+		<fieldset name = "rawWmnTitle">
+			<legend><h3>Raw Women's Championship match</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="rawWmnBliss" name ="rawWmnTitleWinner" value="Alexa Bliss"><label for="rawWmnBliss">Alexa Bliss</label>
+			<br>
+			<input type ="radio" id="rawWmnJax" name = "rawWmnTitleWinner" value="Nia Jax"><label for="rawWmnJax">Nia Jax</label>
+			<br>
+			<br>
+			<b>Will there be a Rock social media plug before the match?:</b>
+			<br>
+			<input type ="radio" id="rawWmnTitleProp1" name="rawWmnTitleProp" value="Yes"><label for="rawWmnTitleProp1">Yes</label>
+			<br>
+			<input type ="radio" id="rawWmnTitleProp2" name="rawWmnTitleProp" value="No"><label for="rawWmnTitleProp2">No</label>
+			<br>
+		</fieldset>
+		<fieldset name = "sdWmnTitle">
+			<legend><h3>SmackDown Women's Championship match</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="sdWmnAsuka" name ="sdWmnTitleWinner" value="Asuka"><label for="sdWmnAsuka">Asuka</label>
+			<br>
+			<input type ="radio" id="sdWmnFlair" name = "sdWmnTitleWinner" value="Charlotte Flair"><label for="sdWmnFlair">Charlotte Flair</label>
+			<br>
+			<br>
+			<b>Will Carmella cash in?:</b>
+			<br>
+			<input type ="radio" id="sdWmnProp1" name="sdWmnProp" value="Yes"><label for="sdWmnProp1">Yes</label>
+			<br>
+			<input type ="radio" id="sdWmnProp2" name="sdWmnProp" value="No"><label for="sdWmnProp2">No</label>
+			<br>
+		</fieldset>
+		<fieldset name = "rawTagTitle">
+			<legend><h3>Raw Tag Team Championship match</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="rawTagBar" name ="rawTagTitleWinner" value="The Bar"><label for="rawTagBar">The Bar</label>
+			<br>
+			<input type ="radio" id="rawTagBraun" name = "rawTagTitleWinner" value="Braun and ???"><label for="rawTagBraun">Braun Strowman & ???</label>
+			<br>
+			<br>
+			<label class ="textLabelBraun"><b>Braun's mystery partner:&nbsp;</b></label>
+			<input type ="text" name ="rawTagProp">
+			<br>
+		</fieldset>
+		<fieldset name = "sdTagTitle">
+			<legend><h3>SmackDown Tag Team Championship match</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="sdTagBB" name ="sdTagTitleWinner" value="The Bludgeon Brothers"><label for="sdTagBB">Bludgeon Brothers</label>
+			<br>
+			<input type ="radio" id="sdTagND" name = "sdTagTitleWinner" value="The New Day"><label for="sdTagND">The New Day</label>
+			<br>
+			<input type ="radio" id="sdTagUsos" name = "sdTagTitleWinner" value="The Usos"><label for="sdTagUsos">The Usos</label>
+			<br><br>
+			<b>Which New Day combination will we see?:</b>
+			<br>
+			<input type ="radio" id="sdTagProp1" name="sdTagProp" value="Big E + Kofi Kingston"><label for="sdTagProp1">Big E & Kofi Kingston</label>
+			<br>
+			<input type ="radio" id="sdTagProp2" name="sdTagProp" value="Big E + Xavier Woods"><label for="sdTagProp2">Big E & Xavier Woods</label>
+			<br>
+			<input type ="radio" id="sdTagProp3" name="sdTagProp" value="Kofi Kingston + Xavier Woods"><label for="sdTagProp3">Kofi Kingston & Xavier Woods</label>
+		</fieldset>
+		<fieldset>
+			<legend><h3>John Cena vs. The Undertaker</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="cenaTakerCena" name ="cenaTakerWinner" value="John Cena"><label for="cenaTakerCena">John Cena</label>
+			<br>
+			<input type ="radio" id="cenaTakerTaker" name = "cenaTakerWinner" value="The Undertaker"><label for="cenaTakerTaker">The Undertaker</label>
+			<br>
+			<input type ="radio" id="cenaTakerNoShow" name = "cenaTakerWinner" value="No Show"><label for="sdTagUsos">Undertaker No Shows</label>
+			<br><br>
+			<b>Which Undertaker will we see?:</b>
+			<br>
+			<input type ="radio" id="cenaTakerProp1" name="cenaTakerProp" value="The Deadman"><label for="cenaTakerProp1">The Deadman</label>
+			<br>
+			<input type ="radio" id="cenaTakerProp2" name="cenaTakerProp" value="American Badass"><label for="cenaTakerProp2">American Badass</label>
+			<br>
+			<input type ="radio" id="cenaTakerProp3" name="cenaTakerProp" value="Mark Calaway"><label for="cenaTakerProp3">Mark Calaway</label>
+			<br>
+			<input type ="radio" id="cenaTakerProp4" name="cenaTakerProp" value="He's not showing up"><label for="cenaTakerProp4">He's not showing up</label>
+			<br>
+			<input type ="radio" id="cenaTakerProp5" name="cenaTakerProp" value="Kane"><label for="cenaTakerProp5">We get Kane instead</label>
+		</fieldset>
+		<fieldset name = "authorityVOlympians">
+			<legend><h3>Angle & Rousey vs. HHH and Stephanie McMahon</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="avoOlympians" name ="avoWinner" value="Angle & Rousey"><label for="avoOlympians">Kurt Angle & Ronda Rousey</label>
+			<br>
+			<input type ="radio" id="avoAuthority" name = "avoWinner" value="HHH & Steph"><label for="avoAuthority">HHH & Stephanie McMahon</label>
+			<br>
+			<br>
+			<b>Will Ronda get cheered or booed?:</b> 
+			<br>
+			<input type ="radio" id="avoProp1" name="avoProp" value="Cheered"><label for="avoProp1">Cheered</label>
+			<br>
+			<input type ="radio" id="avoProp2" name="avoProp" value="Booed"><label for="avoProp2">Booed</label>
+			<br>
+			<br>
+			<b>How many times will Ronda botch?:</b> 
+			<br>
+			<input type ="radio" id="avoBotch1" name="avoBotch" value="0"><label for="avoBotch1">0</label>
+			<br>
+			<input type ="radio" id="avoBotch2" name="avoBotch" value="1"><label for="avoBotch2">1</label>
+			<br>
+			<input type ="radio" id="avoBotch3" name="avoBotch" value="2"><label for="avoBotch3">2</label>
+			<br>
+			<input type ="radio" id="avoBotch4" name="avoBotch" value="3"><label for="avoBotch4">3</label>
+			<br>
+			<input type ="radio" id="avoBotch5" name="avoBotch" value="4+"><label for="avoBotch5">4+</label>
+			<br>
+		</fieldset>
+		<fieldset name = "KO">
+			<legend><h3>Daniel Bryan & Shane McMahon vs Owens & Zayn</h3></legend>
+			<b>Winner:</b>
+			<br>
+			<input type ="radio" id="DBShaneWin" name ="dbShaneKOZaynWinner" value="Daniel Bryan & Shane McMahon"><label for="DBShaneWin">Daniel Bryan & Shane McMahon</label>
+			<br>
+			<input type ="radio" id="KOZaynWin" name = "dbShaneKOZaynWinner" value="Kevin Owens & Sami Zayn"><label for="KOZaynWin">Kevin Owens & Sami Zayn</label>
+			<br><br>
+			<b>Which Team will have a miscommunication first:</b>
+			<br>
+			<input type ="radio" id="dskzProp1" name="dskzProp" value="Daniel Bryan & Shane McMahon"><label for="dskzProp1">Daniel Bryan & Shane McMahon</label>
+			<br>
+			<input type ="radio" id="dskzProp2" name="dskzProp" value="Kevin Owens & Sami Zayn"><label for="dskzProp2">Kevin Owens & Sami Zayn</label>
+			<br>
+			<input type ="radio" id="dskzProp3" name="dskzProp" value="Neither"><label for="dskzProp3">Neither</label>
+		</fieldset>
+		<fieldset>
+			<legend><h3>Bonus questions</h3></legend>
+			<label class = "textLabel2" for="opener"><b>Main Card Opener Match:&nbsp;</b></label> <input type ="text" name="opener"><br>
+			<label class = "textLabel3" for="closer"><b>Closing Match:&nbsp;</b></label> <input type ="text" name="closer"><br>
+		</fieldset>
+		<br>
+		<button name="submit" form="WMGuess" type="submit">Submit</button>
+	</form>
+</div>
+<script>
+	const reignsElement = document.getElementById("uniPropF51");
+    reignsElement.addEventListener("click",reignsKickOut);
+	function reignsKickOut()
+    {
+    	alert("You know it's going to be more than that.");
+    }
+
+    const dbShaneElement = document.getElementById("DBShaneWin");
+    dbShaneElement.addEventListener("click", yesChant);
+    function yesChant()
+    {
+    	alert("YES! YES! YES!");
+    }
+
+    const koZaynElement = document.getElementById("KOZaynWin");
+    koZaynElement.addEventListener("click", noChant);
+    function noChant()
+    {
+    	alert("NO! NO! NO!");
+    }
+
+    const formToJSON = elements => [].reduce.call(elements, (data, element) => {
+  
+  data[element.name] = element.value;
+  return data;
+
+}, {});
+    const handleFormSubmit = event =>
+    {
+    	event.preventDefault;
+    	const data = {};
+    	const dataContainer = document.getElementsByClassName("results__display")[0];
+    	dataContainer = JSON.stringify(data, null, " " );
+    }
+    const form = document.getElementById("WMGuess");
+    form.addEventListener("submit", handleFormSubmit);
+
+</script>
+</body>
+</html>
