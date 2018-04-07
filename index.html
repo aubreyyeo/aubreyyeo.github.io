@@ -8,13 +8,12 @@
 		{
 			font-family: "Roboto", Helvitica, Arial, sans-serif;
 			font-size:1em;
-            background-image:url("aubreyyeo.github.io/WM34Logo.png");
+            background-image:url("WM34Logo.png");
             background-repeat:no-repeat;
             background-attachment: fixed;
             background-size: cover;
             background-position: center, center;
 		}
-
 		.container
 		{
             display: block;
@@ -73,10 +72,10 @@
 			display:inline-block;
 			text-align:right;
 		}
-		button
+		.submit-button
 		{
 			width: 60%;
-			border-radius:8px;
+			border-radius:12px;
 			font-size: 1.2em;
 			font-weight:100;
 			color: gold;
@@ -85,6 +84,20 @@
 			position: center;
 			margin-left:20%;
 			margin-right:20%;
+		}
+
+		.copy-button
+		{
+			width: 40%;
+			border-radius:12px;
+			font-size: 1.1em;
+			font-weight:100;
+			color: gold;
+			height:40px;
+			background-color:rgb(119,68,158);
+			position: center;
+			margin-left:30%;
+			margin-right:30%;
 		}
 		.headline
 		{
@@ -103,6 +116,60 @@
 			font-weight: 900;
 			color:rgb(108,60,145);
 		}
+		.modal
+		{
+		    display: none;
+		    position: fixed; 
+		    z-index: 1;
+		    left: 0;
+		    top: 0;
+		    align-self: center;
+		    width: 100%; 
+		    height: 100%; 
+		    background-color: rgb(0,0,0);
+		    background-color: rgba(0,0,0,0.8); 
+		}
+		
+		.modal-head
+		{
+			font-size: 1.5em;
+			font-weight:900;
+			font-family: "Roboto", Helvitica, Arial, sans-serif;
+			text-align: center;
+		}
+
+		.modal-content 
+		{
+		    background-color: #fefefe;
+		    padding-left: 40px;
+		    padding-right: 40px;
+		    padding-top: 15px;
+		    padding-bottom: 20px;
+		    margin: 10% auto;
+		    border: 1px solid #888;
+		    border-radius: 25px;
+		    width: 40%; 
+		    font-size: 0.65em;
+		}
+
+		.close 
+		{
+		    color: #aaa;
+		    float: right;
+		    font-size: 28px;
+		    font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus 
+		{
+		    color: black;
+		    text-decoration: none;
+		    cursor: pointer;
+		}
+
+
+
 	</style>
 <meta charset="utf-8">
 <title>Guesslemania 34</title>
@@ -111,7 +178,7 @@
 <body>
 	<div class ="container">
 	<div class ="headline">Welcome to Guesslemania!</div>
-	<form id = WMGuess>
+	<form id = WMGuess onsubmit ="return make_json(this)">
 		<fieldset name = "username">
 			<legend><h3>Name</h3></legend>
 			<label for="usernameInput"><b>What's your name?:&nbsp;</b></label> <input type ="text" placeholder ="Vincent K. McMahon" name="usernameInput"><br>
@@ -374,9 +441,17 @@
 			<label class = "textLabel3" for="closer"><b>Closing Match:&nbsp;</b></label> <input type ="text" name="closer"><br>
 		</fieldset>
 		<br>
-		<button name="submit" form="WMGuess" type="submit">Submit</button>
+		<button name="submit" form="WMGuess" type="submit" class="submit-button">Submit</button>
 	</form>
 </div>
+<div id="myModal" class="modal">
+	<div class="modal-content">
+		<label><span class="close">&times;</span>
+		<p class = "modal-head">Your Responses</p></label>
+		<p id = "output">placeholder</p>
+	</div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
